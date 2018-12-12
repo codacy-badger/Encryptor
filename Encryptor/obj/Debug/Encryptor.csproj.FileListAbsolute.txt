@@ -1,0 +1,7 @@
+C:\Users\KIM\source\repos\Encryptor\Encryptor\bin\Debug\Encryptor.exe.config
+C:\Users\KIM\source\repos\Encryptor\Encryptor\bin\Debug\Encryptor.exe
+C:\Users\KIM\source\repos\Encryptor\Encryptor\bin\Debug\Encryptor.pdb
+C:\Users\KIM\source\repos\Encryptor\Encryptor\obj\Debug\Encryptor.csprojAssemblyReference.cache
+C:\Users\KIM\source\repos\Encryptor\Encryptor\obj\Debug\Encryptor.csproj.CoreCompileInputs.cache
+C:\Users\KIM\source\repos\Encryptor\Encryptor\obj\Debug\Encryptor.exe
+C:\Users\KIM\source\repos\Encryptor\Encryptor\obj\Debug\Encryptor.pdb
