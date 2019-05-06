@@ -5,7 +5,7 @@
 * 문자열 암호화 / 복호화
 
 ## 2. 링크
-* [Video_Link](serviceapi.nmv.naver.com/view/ugcPlayer.nhn?vid=42E44F3EE46A3EFC0C0F346FF3FB11FE605A&inKey=V124af400812522d182f609a50cb4c302d8f92b8d0d77a8f30e457a836f76968fa42a09a50cb4c302d8f9&hasLink=0
+* [Video_Link](http://serviceapi.nmv.naver.com/view/ugcPlayer.nhn?vid=42E44F3EE46A3EFC0C0F346FF3FB11FE605A&inKey=V124af400812522d182f609a50cb4c302d8f92b8d0d77a8f30e457a836f76968fa42a09a50cb4c302d8f9&hasLink=0
  "Video_Link")
 
 ## 3. 이미지
