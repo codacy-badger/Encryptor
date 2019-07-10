@@ -6,7 +6,7 @@ namespace Encrytor
 {
     public class AesEncrytor
     {
-        public static void Main()
+        public static void Main(String[] args)
         {
             byte[] key = { 0x3a, 0xb0, 0x5c, 0xe0, 0x10, 0x9b, 0x33, 0x8b, 0xcc, 0xe9, 0xd1, 0x0a, 0x00, 0xa7, 0xdd, 0x4d };
             byte[] IV = { 0x1e, 0x0b, 0xd3, 0x0e, 0x06, 0x99, 0x3c, 0xb5, 0xc5, 0xe1, 0x1a, 0xee, 0x15, 0x47, 0x6a, 0xb2 };
@@ -33,10 +33,6 @@ namespace Encrytor
 				{
                     break;
 				}
-                else
-				{
-                    break;
-				}
 
                 System.Console.WriteLine(output);
                 System.Console.WriteLine();
@@ -52,9 +48,13 @@ namespace Encrytor
                 throw new ArgumentNullException("plainText");
 			}
             if (Key == null || Key.Length <= 0)
+			{
                 throw new ArgumentNullException("Key");
+			}
             if (IV == null || IV.Length <= 0)
+			{
                 throw new ArgumentNullException("IV");
+			}
             byte[] encrypted;
 
             // Create an Aes object
