@@ -1,4 +1,5 @@
 # C#_AES_Encryptor
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0b79a3bdca094ae39ac3138e8d4b632c)](https://www.codacy.com/app/gaebhi/Encryptor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gaebhi/Encryptor&amp;utm_campaign=Badge_Grade)
 ## 1.설명
 * C#_AES_Encryptor
 * 문자열 암호화/복호화
