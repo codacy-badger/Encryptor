@@ -4,34 +4,10 @@ using System.Security.Cryptography;
 
 namespace Encrytor
 {
-    class AesEncrytor
+    public class AesEncrytor
     {
         public static void Main()
         {
-            //////////////////////////Example//////////////////////////////////////////////////////
-            /*
-            string original = "Here is some data to encrypt!";
-
-            // Create a new instance of the Aes
-            // class.  This generates a new key and initialization 
-            // vector (IV).
-
-            using (Aes myAes = Aes.Create())
-            {
-
-                // Encrypt the string to an array of bytes.
-                byte[] encrypted = EncryptStringToBytes_Aes(original, myAes.Key, myAes.IV);
-
-                // Decrypt the bytes to a string.
-                string roundtrip = DecryptStringFromBytes_Aes(encrypted, myAes.Key, myAes.IV);
-
-                //Display the original data and the decrypted data.
-                Console.WriteLine("Original:   {0}", original);
-                Console.WriteLine("Round Trip: {0}", roundtrip);
-            }
-            */
-            //////////////////////////////////////////////////////////////////////////////////////
-            
             byte[] key = { 0x3a, 0xb0, 0x5c, 0xe0, 0x10, 0x9b, 0x33, 0x8b, 0xcc, 0xe9, 0xd1, 0x0a, 0x00, 0xa7, 0xdd, 0x4d };
             byte[] IV = { 0x1e, 0x0b, 0xd3, 0x0e, 0x06, 0x99, 0x3c, 0xb5, 0xc5, 0xe1, 0x1a, 0xee, 0x15, 0x47, 0x6a, 0xb2 };
 
@@ -44,7 +20,9 @@ namespace Encrytor
                 var keyInfo = System.Console.ReadKey();
                 System.Console.WriteLine();
                 if (keyInfo.Key == ConsoleKey.E)
+				{
                     output = System.Convert.ToBase64String(EncryptStringToBytes_Aes(input, key, IV));
+				}
                 else if (keyInfo.Key == ConsoleKey.D)
                 {
                     input = input.Replace("!", "");
@@ -52,9 +30,13 @@ namespace Encrytor
                     output = DecryptStringFromBytes_Aes(System.Convert.FromBase64String(input), key, IV);
                 }
                 else if (keyInfo.Key == ConsoleKey.Q)
+				{
                     break;
+				}
                 else
+				{
                     break;
+				}
 
                 System.Console.WriteLine(output);
                 System.Console.WriteLine();
@@ -66,7 +48,9 @@ namespace Encrytor
         {
             // Check arguments.
             if (plainText == null || plainText.Length <= 0)
+			{
                 throw new ArgumentNullException("plainText");
+			}
             if (Key == null || Key.Length <= 0)
                 throw new ArgumentNullException("Key");
             if (IV == null || IV.Length <= 0)
@@ -108,11 +92,17 @@ namespace Encrytor
         {
             // Check arguments.
             if (cipherText == null || cipherText.Length <= 0)
+			{
                 throw new ArgumentNullException("cipherText");
+			}
             if (Key == null || Key.Length <= 0)
+			{
                 throw new ArgumentNullException("Key");
+			}
             if (IV == null || IV.Length <= 0)
+			{
                 throw new ArgumentNullException("IV");
+			}
 
             // Declare the string used to hold
             // the decrypted text.
